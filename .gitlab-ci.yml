@@ -1,0 +1,39 @@
+image: maven:3-jdk-8
+
+variables:
+  DOCKER_DRIVER: overlay
+  SPRING_PROFILES_ACTIVE: gitlab-ci
+  MAVEN_CLI_OPTS: "-s .m2/settings.xml --batch-mode"
+  MAVEN_OPTS: "-Dmaven.repo.local=.m2/repository"
+
+stages:
+  - build
+  - package
+  - deploy
+
+workflow:
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "master"'
+
+maven-build:
+  stage: build
+  script:
+   - mvn $MAVEN_CLI_OPTS package -B
+  artifacts:
+    paths:
+      - api/target/*.jar
+
+docker-build:
+  image: docker:latest
+  services:
+    - docker:dind
+  stage: package
+  script:
+    - docker build -t dulithadabare/moto-mvp:latest .
+    - docker login -u redacted -p redacted
+    - docker push dulithadabare/moto-mvp:latest
+
+maven-deploy:
+  stage: deploy
+  script:
+    - mvn $MAVEN_CLI_OPTS deploy

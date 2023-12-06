@@ -1,0 +1,194 @@
+{
+  "loggedInUserId": 123,
+  "vehicleDetails": {
+    "bodyColour": {
+      "code": "PLW",
+      "id": 1,
+      "name": "PEARL WHITE"
+    },
+    "chassisNo": "12JE-12223-1333-1222",
+    "countryUsedIn": {
+      "code": "JP",
+      "id": 1,
+      "name": "JAPAN"
+    },
+    "engineCapacityCC": 1300,
+    "engineType": {
+      "code": "PTR",
+      "id": 1,
+      "name": "PETROL"
+    },
+    "odometerReading": 3500,
+    "vehicleMake": {
+      "code": "SZK",
+      "id": 1,
+      "name": "SUZUKI"
+    },
+    "vehicleModel": {
+      "code": "SWFT",
+      "id": 1,
+      "makeId": 1,
+      "name": "SWIFT"
+    },
+    "vehicleStatus": {
+      "code": "UU",
+      "id": 2,
+      "name": "USED UNREGISTERED"
+    },
+    "yearOfManufacture": 2017,
+    "vehicleBatteryType": "CAR",
+    "vehicleHornType": "OEM",
+    "vehiclePaintFinishType": "OEM"
+  },
+  "vehicleCondition": {
+    "generalConditionList": [
+      {
+        "name": "GOOD ORDER",
+        "rating": 5,
+        "type": "ENG"
+      },
+      {
+        "name": "SERVICEABLE",
+        "rating": 3,
+        "type": "CLT"
+      },
+      {
+        "name": "SERVICEABLE",
+        "rating": 3,
+        "type": "GBX"
+      },
+      {
+        "name": "SERVICEABLE",
+        "rating": 3,
+        "type": "SHFT"
+      },
+      {
+        "name": "SERVICEABLE",
+        "rating": 3,
+        "type": "DIFF"
+      },
+      {
+        "name": "SERVICEABLE",
+        "rating": 3,
+        "type": "GSEL"
+      },
+      {
+        "name": "SERVICEABLE",
+        "rating": 3,
+        "type": "SUSPF"
+      },
+      {
+        "name": "SATISFACTORY",
+        "rating": 4,
+        "type": "SUSPR"
+      },
+      {
+        "name": "SATISFACTORY",
+        "rating": 8,
+        "type": "STEER"
+      },
+      {
+        "name": "EFFICIENT",
+        "rating": 5,
+        "type": "FBRK"
+      },
+      {
+        "name": "EFFICIENT",
+        "rating": 5,
+        "type": "PBRK"
+      },
+      {
+        "name": "FUNCTIONING",
+        "rating": 3,
+        "type": "SELEC"
+      },
+      {
+        "name": "NOT FUNCTIONING",
+        "rating": 2,
+        "type": "AELEC"
+      },
+      {
+        "name": "FUNCTIONING",
+        "rating": 3,
+        "type": "OBLELEC"
+      },
+      {
+        "name": "FUNCTIONING",
+        "rating": 3,
+        "type": "MELEC"
+      },
+      {
+        "name": "FUNCTIONING",
+        "rating": 3,
+        "type": "HELEC"
+      },
+      {
+        "name": "FUNCTIONING",
+        "rating": 3,
+        "type": "BELEC"
+      },
+      {
+        "name": "FUNCTIONING",
+        "rating": 3,
+        "type": "OLELEC"
+      },
+      {
+        "name": "SOUND",
+        "rating": 8,
+        "type": "CHS"
+      },
+      {
+        "name": "GOOD",
+        "rating": 3,
+        "type": "PNT"
+      }
+    ],
+    "frontTyreDetailsCondition": {
+      "size": 15,
+      "wearPercentageList": [
+        10,
+        12
+      ]
+    },
+    "rearTyreDetailsCondition": {
+      "size": 15,
+      "wearPercentageList": [
+        10,
+        10
+      ]
+    }
+  },
+  "vehicleExtraList": [
+    {
+      "code": "AC",
+      "name": "AIR CONDITION"
+    },
+    {
+      "code": "PWM",
+      "name": "POWER MIRRORS"
+    },
+    {
+      "code": "PWS",
+      "name": "POWER SHUTTERS"
+    }
+  ],
+  "vehicleInsuranceHistoryList": [
+    {
+      "previousRenewalDate": "2020-04-06T09:24:51.108Z",
+      "valueOnPreviousRenewal": 5200000
+    }
+  ],
+  "useCustomCovers": true,
+  "coverList": [
+    "FRE",
+    "DST"
+  ],
+  "customCoverList": [
+    {
+      "id": 1,
+      "code": "FRE",
+      "name": "FIRE COVER",
+      "amount": 0.0008
+    }
+  ]
+}
